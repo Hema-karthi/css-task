@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root{
+            font-size:20px;
+            font-style: normal;
+        }
+        .box{ 
+            width: 80%;
+            max-width: 600px;
+            background-color: aquamarine;
+            padding: 20px;
+            border:2px solid red ;
+        }
+         .para{
+            font-size: 1.5rem;
+            color: brown;
+            font-style: oblique;
+         }
+         .view{ 
+            font-size: 5vh;
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+         }
+         .box1{ 
+            background-color:lightgreen;
+            padding: 20px;
+
+         }
+         @media (max-width: 768px){
+            .box1{
+                background-color:lightcoral;
+        }
+            }
+</style>
+</head>
+<body>
+<h1> using width 80% and maximum width style</h1>
+<div class="box"> <center> width max-width </center> </div>
+<h1> using  font sozeo 1.5 rem </h1>
+<p class="para"> Lorem ipsum, dolor sit amet consectetur
+    adipisicing elit. Incidunt, vel?</p>
+    <h1> using vw unit here</h1>
+    <div class="view">   
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maiores repudiandae sequi inventore!
+        Pariatur exercitationem repellat, laborum vero eligendi provident.
+    </div>
+    <h1> using media query</h1>
+    <div class="box1"> The background-color of the box will change
+    below 768px 
+    </div>
+
+    
+
+</body>
+</html>

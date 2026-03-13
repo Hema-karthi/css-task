@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transition Hover Tasks</title>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transition Hover Tasks</title>
+
+<style>
+
+/* General body style */
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color:aquamarine;
+}
+.box{
+    width:200px;
+    height:100px;
+    margin:20px auto;
+    line-height:100px;
+    color:white;
+    font-weight:bold;
+}
+.box1{
+    background-color:blue;
+    transition: background-color 1s ease-in;
+}
+
+.box1:hover{
+    background-color:red;
+}
+.box2{
+    background-color:green;
+    transition: width 1s ease-in-out;
+}
+
+.box2:hover{
+    transform: scale(1.2);
+}
+.box3{
+    background-color:purple;
+    transition: width 1s ease 1s;
+}
+.box3:hover{
+    background-color:orange;
+    transform: rotate(180deg);
+    box-shadow:0px 10px 20px green;
+}
+.container{
+    width:200px;
+    height:100px;
+    background-color:black;
+    margin:20px auto;
+    position:relative;
+}
+
+.hiddenText{
+    color:white;
+    opacity:0;
+    transition: opacity 0.5s;
+    position:absolute;
+    top:40%;
+    left:25%;
+}
+.container:hover .hiddenText{
+    opacity:1;
+}
+</style>
+</head>
+<body>
+    <h2>Hover Transition Tasks</h2>
+
+<div class=" box box1">
+Hover Me
+</div>
+<div class="box box2">
+Grow Hover
+</div>
+<div class="box box3">
+Shadow Hover
+</div>
+<div class="container">
+<div class="hiddenText">
+Hidden Text
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+.header{
+    background-color: black;
+    height: auto;
+
+}
+.content1{
+    color: white;
+    margin-bottom: auto;
+    
+}
+.content2{
+    color: white;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto; 
+
+}
+

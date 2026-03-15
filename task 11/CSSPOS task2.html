@@ -1,0 +1,103 @@
+<style> 
+     span{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+    }
+    .one{
+        display: none;
+    }
+    .two{
+        display: block;
+    }  
+   .three{
+      display: inline;
+   }
+   .four{
+      display: inline-block;
+   }
+   .container{ 
+        height:200px;
+        border: 10px black solid;
+        position: relative;
+   }
+   .box1{
+    background-color: red;
+    position: static;
+   }
+   .box2{
+    background-color: pink;
+    position: relative;
+    left: 20px;
+   }
+.box3{
+    background-color: yellow;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.box4{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: aquamarine;
+}
+.header{
+    position: sticky;
+    top: 500px;
+    color: brown;
+    font-size: 100px;
+   
+}
+.content{
+    height: 1000px;
+}
+</style>
+<body>  
+    <div class="box4"> fixed</div>
+    <div class="header"> sticky</div>
+   
+    <div class="container">    
+    <div class="box1">  red </div>
+     <div class="box2"> black</div>
+     <div class="box3"> pink</div>
+   </div>
+
+  <h1> display property none</h1>
+  <p class="one"> 
+     <span> item 1</span>
+     <span> item 2</span>
+     <span> item 3</span>
+  </p> 
+  
+
+  <h1> display property block</h1>
+  
+ <div >
+     <span class="two">item 1</span>
+     <span class="two">item 2</span>
+     <span class="two">item 3</span>
+ </div>
+
+ <h1> display property inline</h1> <br>
+
+ <div class="three">
+     <span> item 1</span>
+     <span> item 2</span>
+     <span> item 3</span>
+ </div> <br> <br>
+
+ <h1> display property inline-block</h1>
+ <div  height="20px" width="10px"> 
+      
+     <span class="four"> item 1</span>
+     <span class="four"> item 2</span>
+     <span class="four"> item 3</span>
+ </div>   
+ <button onclick="toggleMenu()"> MENU</button>
+ <div class="content">
+
+ </div>
+ 
+
+</body>
